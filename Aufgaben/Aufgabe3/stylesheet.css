@@ -6,7 +6,13 @@ body{
     text-decoration: none;
 }
 
-
+.images{
+    width: 800px;
+    position: relative;
+    top: -650px;
+    margin: 15px;
+    border-radius: 5px 5px 5px 5px;  
+}
 
 .navbar{
     display: inline-block;
