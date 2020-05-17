@@ -1,0 +1,189 @@
+
+body{
+    background-image: url("bg.png");
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.images{
+    width: 800px;
+    position: relative;
+    top: -650px;
+    margin: 15px;
+    border-radius: 5px 5px 5px 5px;  
+}
+
+.navbar{
+    display: inline-block;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 9999;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    float: right;
+    border-right: solid 1px white;
+    background: black;
+    padding: 5px 8px 5px 5px;
+}
+
+.nav1{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.nav2{
+    border-radius: 5px 0px 0px 5px;
+}
+
+a.active{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+li a:hover{
+    color: lightgreen;
+}
+
+li a.activepage{
+    color: lightgreen;
+    font-weight: bold; 
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    padding: 5px 10px;
+}
+
+.header-text{
+    font-size: 120pt;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -770px;
+    text-align: center;
+    letter-spacing: -15px;
+}
+
+.headline{
+    color: #333;
+    margin: auto;
+    width: 25%;
+    border: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    bottom: 800px;
+    left: 50px;
+}
+
+.text{
+    color: #333;
+    margin: auto;
+    width: 25%;
+    border: 5px;
+    padding: 10px;
+    font-size: 17px;
+    text-align: left;
+    position: relative;
+    bottom: 850px;
+    left: 50px;
+}
+
+.circle{
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    margin: -30px auto;
+}
+
+.instagram{
+    position: absolute;
+    bottom: 240px;
+    left: 42%;
+    z-index: 9998;
+}
+
+.instagram:hover{
+    opacity: 0.5;
+}
+
+
+
+#heading{
+    color: #333;
+    font-size: 20pt;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    bottom: 650px;
+}
+
+
+#portrait{
+    width: 229px;
+    position: relative;
+    top: -700px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+#kontakt{
+    color: lightgreen;
+    font-size: 20pt;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    margin-top: -700px;
+    margin-left: 210px;
+}
+
+.formular{
+    background: lightgrey;
+    font-size: 10pt;
+    color: white;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 210px;
+    text-align: left;
+}
+
+.nachricht{
+    background: lightgrey;
+    font-size: 10pt;
+    color: white;
+    width: 200px;
+    padding: 20px 80px 5px 5px;
+    margin-left: 210px;
+    text-align: left;
+}
+
+.datenschutz{
+    color: lightgrey;
+    font-size: 10pt;
+    position: relative;
+    text-align: left;
+    margin-left: 210px;
+}
+
+.absenden{
+    color: white;
+    background: lightslategrey;
+    font-size: 10pt;
+    width: 55px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 210px;
+}
+
