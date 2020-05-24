@@ -1,31 +1,28 @@
+section{
+    height: 400px;
+    width: 600px;
+    margin-top: 300px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position:relative;
+}
+
+section>.Banderole{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section>iframe{
+    position: absolute;
+    height: 250px;
+    width: 450px;
+    right: 70px;
+    top: 70px;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        background-image: url(wrapperbg.png), url(bg.png);
-        background-repeat: no-repeat, repeat;
-        background-attachment: fixed, fixed;
-        background-position: center, center;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: 380px;
-    }
-
-    img[alt=Band]{
-        display: inline-block;
-        position: absolute;
-        margin-left: 180px;
-        margin-top: 130px;
-    }
-
-    .video{
-        display: inline-block;
-        position: absolute;
-    }
+    background-image: url(bg.png);
+}
