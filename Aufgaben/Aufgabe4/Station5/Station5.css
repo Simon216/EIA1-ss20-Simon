@@ -34,7 +34,6 @@ body{
     .column-left{
         display: inline-block;
         position: absolute;
-        float: left;
         width: 140px;
         margin-top: 60px;
         margin-left: -160px;
