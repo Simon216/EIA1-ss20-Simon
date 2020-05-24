@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        background-image: url(images/wrapperbg.png), url(images/bg.png);
+        background-image: url(wrapperbg.png), url(bg.png);
         background-repeat: no-repeat, repeat;
         background-attachment: fixed, fixed;
         background-position: center, center;
