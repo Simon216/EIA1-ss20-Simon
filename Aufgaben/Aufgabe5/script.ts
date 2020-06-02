@@ -36,7 +36,7 @@ var afrv2: number = afr08 - afr ;
 var afrv3: number = afrv2 / afrv ;
 var eurov: number = eur08 * 0.01;
 var eurov2: number = eur08 - eur;
-var eurov3: number = eurov2 / eurov *(-1);
+var eurov3: number = eurov2 / eurov;
 console.log("Die Emission von Europa ist : " + eur + "kg C02");
 console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit :  " + eurorel + "%");
 console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um "+ eurov3 + "% verändert ");
