@@ -1,53 +1,47 @@
 "use strict";
-var namer: number = 6036;
-var samer: number = 1262;
-var afr: number = 1236;
-var asia: number = 16274;
-var aus: number = 2101;
-var eur: number = 4209;
-var eur08: number = 4966;
-var afr08: number = 1028;
-var samer08: number = 1133;
-var asia08: number = 12955;
-var namer08: number = 6600;
-var aus08: number = 1993;
-
-// auf zwei nachkommastellen abrunden
-function komma(x) {
-    return Number.parseFloat(x).toFixed(2);
-  }
-var gesamt: number = komma eur + afr + samer + namer + asia + aus;
-var proz1: number = komma gesamt * 0.01;
-var eurorel: number = komma eur / proz1;
-var eurov: number = komma eur08 * 0.01;
-var eurov2: number = komma eur08 - eur;
-var eurov3: number = komma eurov2 / eurov;
-var afrrel: number = komma afr / proz1;
-var asiarel: number = komma asia / proz1;
-var ausrel: number = komma aus / proz1;
-var samerrel: number = komma samer / proz1;
-var namerrel: number = komma namer / proz1;
-var namerv: number = komma namer08 * 0.01;
-var namerv2: number = komma namer08 - namer;
-var namerv3: number = komma namerv2 / namerv ;
-var asiav: number = komma asia08 * 0.01;
-var asiav2: number = komma asia08 - asia;
-var asiav3: number = komma asiav2 / asiav*(-1) ;
-var samerv: number = komma samer08 * 0.01;
-var samerv2: number = komma samer08 - samer;
-var samerv3: number = komma samerv2 / samerv *(-1);
-var ausv: number = komma aus08 * 0.01;
-var ausv2: number = komma aus08 - aus;
-var ausv3: number = komma ausv2 / ausv *(-1);
-var afrv: number = komma afr08 * 0.01;
-var afrv2: number = komma afr08 - afr;
-var afrv3: number = komma ((afrv2 / afrv) *(-1));
-
+var namer = 6036;
+var samer = 1262;
+var afr = 1236;
+var asia = 16274;
+var aus = 2101;
+var eur = 4209;
+var eur08 = 4966;
+var afr08 = 1028;
+var samer08 = 1133;
+var asia08 = 12955;
+var namer08 = 6600;
+var aus08 = 1993;
+var gesamt = eur + afr + samer + namer + asia + aus;
+var proz1 = gesamt * 0.01;
+var eurorel = eur / proz1;
+var eurov = eur08 * 0.01;
+var eurov2 = eur08 - eur;
+var eurov3 = eurov2 / eurov;
+var afrrel = afr / proz1;
+var asiarel = asia / proz1;
+var ausrel = aus / proz1;
+var samerrel = samer / proz1;
+var namerrel = namer / proz1;
+var namerv = namer08 * 0.01;
+var namerv2 = namer08 - namer;
+var namerv3 = namerv2 / namerv;
+var asiav = asia08 * 0.01;
+var asiav2 = asia08 - asia;
+var asiav3 = asiav2 / asiav * (-1);
+var samerv = samer08 * 0.01;
+var samerv2 = samer08 - samer;
+var samerv3 = samerv2 / samerv * (-1);
+var ausv = aus08 * 0.01;
+var ausv2 = aus08 - aus;
+var ausv3 = ausv2 / ausv * (-1);
+var afrv = afr08 * 0.01;
+var afrv2 = afr08 - afr;
+var afrv3 = ((afrv2 / afrv) * (-1));
 function opa1() {
     document.getElementsByClassName(".europe").style.opacity = '0.1';
-
 }
 function samerfunction() {
+    var _a;
     console.log("Emission von Südamerika ist : " + samer + "kg C02");
     console.log("Relativ zur Gesamtemission verursacht Südamerika damit :  " + samerrel + "%");
     console.log("Im Vergleich zu 2008 hat sich die Emission um " + samerv3 + "% verändert ");
@@ -62,17 +56,16 @@ function samerfunction() {
     document.querySelector("#h3e").innerHTML = samerrel + "%";
     document.querySelector("#h4e").innerHTML = samerv3 + "%";
     document.querySelector("#h5e").innerHTML = samerv2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 4%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 4%");
     document.querySelector("div.prz").innerHTML = "4%";
-    
 }
 function afrfunction() {
+    var _a;
     console.log("Die Emission von Afrika ist : " + afr + "kg C02");
     console.log("Relativ zur Gesamtemission verursacht Afrika damit :  " + afrrel + "%");
     console.log("Im Vergleich zu 2008 die Emission um " + afrv3 + "% verändert ");
     console.log("Im Vergleich zu 2008 sind das" + afrv2 + "kg C02");
     console.log("______________________________________________________");
-
     document.querySelector("#p4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     document.querySelector("#p3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
     document.querySelector("#h1e").innerHTML = "Carbon Dioxide Emissions in Africa";
@@ -82,11 +75,11 @@ function afrfunction() {
     document.querySelector("#h3e").innerHTML = afrrel + "%";
     document.querySelector("#h4e").innerHTML = afrv3 + "%";
     document.querySelector("#h5e").innerHTML = afrv2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 4%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 4%");
     document.querySelector("div.prz").innerHTML = "4%";
-    
 }
 function namerfunction() {
+    var _a;
     document.querySelector("#p4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     document.querySelector("#p3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
     document.querySelector("#p1").innerHTML = "Emission absolute of North America in 2018";
@@ -96,10 +89,11 @@ function namerfunction() {
     document.querySelector("#h3e").innerHTML = namerrel + "%";
     document.querySelector("#h4e").innerHTML = namerv3 + "%";
     document.querySelector("#h5e").innerHTML = namerv2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 19%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 19%");
     document.querySelector("div.prz").innerHTML = "19%";
 }
 function asiafunction() {
+    var _a;
     document.querySelector("#p4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     document.querySelector("#p3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
     document.querySelector("#h1e").innerHTML = "Carbon Dioxide Emissions in Asia";
@@ -109,10 +103,11 @@ function asiafunction() {
     document.querySelector("#h3e").innerHTML = asiarel + "%";
     document.querySelector("#h4e").innerHTML = asiav3 + "%";
     document.querySelector("#h5e").innerHTML = asiav2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 52%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 52%");
     document.querySelector("div.prz").innerHTML = "52%";
 }
 function ausfunction() {
+    var _a;
     document.querySelector("#p4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     document.querySelector("#p3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
     document.querySelector("#h1e").innerHTML = "Carbon Dioxide Emissions in Australia";
@@ -122,10 +117,11 @@ function ausfunction() {
     document.querySelector("#h3e").innerHTML = ausrel + "%";
     document.querySelector("#h4e").innerHTML = ausv3 + "%";
     document.querySelector("#h5e").innerHTML = ausv2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 7%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 7%");
     document.querySelector("div.prz").innerHTML = "7%";
 }
 function eurofunction() {
+    var _a;
     console.log("Die Emission von Europa ist : " + eur + "kg");
     console.log("Relativ zur Gesamtemission verursacht Europa damit :  " + eurorel + "%");
     console.log("Im Vergleich zu 2008 die Emission um " + eurov3 + "% verändert ");
@@ -140,9 +136,8 @@ function eurofunction() {
     document.querySelector("#h3e").innerHTML = eurorel + "%";
     document.querySelector("#h4e").innerHTML = eurov3 + "%";
     document.querySelector("#h5e").innerHTML = eurov2 + "Kg";
-    document.querySelector("div.chart")?.setAttribute("style", "height: 14%");
+    (_a = document.querySelector("div.chart")) === null || _a === void 0 ? void 0 : _a.setAttribute("style", "height: 14%");
     document.querySelector("div.prz").innerHTML = "14%";
-    
 }
 window.addEventListener("load", function () {
     document.querySelector(".europe").addEventListener("click", eurofunction);
@@ -165,4 +160,3 @@ console.log("Die Emission von Australien ist : " + aus + "kg C02");
 console.log("Relativ zur Gesamtemission verursacht Australien damit :  " + ausrel + "%");
 console.log("Im Vergleich zu 2008 die Emission um " + ausv3 + "% verändert ");
 console.log("Im Vergleich zu 2008 sind das" + ausv2 + "kg C02");
-//# sourceMappingURL=script.js.map

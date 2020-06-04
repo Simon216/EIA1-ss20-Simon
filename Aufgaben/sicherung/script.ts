@@ -11,37 +11,32 @@ var samer08: number = 1133;
 var asia08: number = 12955;
 var namer08: number = 6600;
 var aus08: number = 1993;
-
-// auf zwei nachkommastellen abrunden
-function komma(x) {
-    return Number.parseFloat(x).toFixed(2);
-  }
-var gesamt: number = komma eur + afr + samer + namer + asia + aus;
-var proz1: number = komma gesamt * 0.01;
-var eurorel: number = komma eur / proz1;
-var eurov: number = komma eur08 * 0.01;
-var eurov2: number = komma eur08 - eur;
-var eurov3: number = komma eurov2 / eurov;
-var afrrel: number = komma afr / proz1;
-var asiarel: number = komma asia / proz1;
-var ausrel: number = komma aus / proz1;
-var samerrel: number = komma samer / proz1;
-var namerrel: number = komma namer / proz1;
-var namerv: number = komma namer08 * 0.01;
-var namerv2: number = komma namer08 - namer;
-var namerv3: number = komma namerv2 / namerv ;
-var asiav: number = komma asia08 * 0.01;
-var asiav2: number = komma asia08 - asia;
-var asiav3: number = komma asiav2 / asiav*(-1) ;
-var samerv: number = komma samer08 * 0.01;
-var samerv2: number = komma samer08 - samer;
-var samerv3: number = komma samerv2 / samerv *(-1);
-var ausv: number = komma aus08 * 0.01;
-var ausv2: number = komma aus08 - aus;
-var ausv3: number = komma ausv2 / ausv *(-1);
-var afrv: number = komma afr08 * 0.01;
-var afrv2: number = komma afr08 - afr;
-var afrv3: number = komma ((afrv2 / afrv) *(-1));
+var gesamt: number = eur + afr + samer + namer + asia + aus;
+var proz1: number = gesamt * 0.01;
+var eurorel: number = eur / proz1;
+var eurov: number = eur08 * 0.01;
+var eurov2: number = eur08 - eur;
+var eurov3: number = eurov2 / eurov;
+var afrrel: number = afr / proz1;
+var asiarel: number = asia / proz1;
+var ausrel: number = aus / proz1;
+var samerrel: number = samer / proz1;
+var namerrel: number = namer / proz1;
+var namerv: number = namer08 * 0.01;
+var namerv2: number = namer08 - namer;
+var namerv3: number = namerv2 / namerv ;
+var asiav: number = asia08 * 0.01;
+var asiav2: number = asia08 - asia;
+var asiav3: number = asiav2 / asiav*(-1) ;
+var samerv: number = samer08 * 0.01;
+var samerv2: number = samer08 - samer;
+var samerv3: number = samerv2 / samerv *(-1);
+var ausv: number = aus08 * 0.01;
+var ausv2: number = aus08 - aus;
+var ausv3: number = ausv2 / ausv *(-1);
+var afrv: number = afr08 * 0.01;
+var afrv2: number = afr08 - afr;
+var afrv3: number = ((afrv2 / afrv) *(-1));
 
 function opa1() {
     document.getElementsByClassName(".europe").style.opacity = '0.1';
