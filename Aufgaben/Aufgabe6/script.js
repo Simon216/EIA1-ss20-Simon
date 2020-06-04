@@ -27,16 +27,16 @@ var namerv2 = namer08 - namer;
 var namerv3 = namerv2 / namerv;
 var asiav = asia08 * 0.01;
 var asiav2 = asia08 - asia;
-var asiav3 = asiav2 / asiav * (-1);
+var asiav3 = asiav2 / asiav;
 var samerv = samer08 * 0.01;
 var samerv2 = samer08 - samer;
-var samerv3 = samerv2 / samerv * (-1);
+var samerv3 = samerv2 / samerv;
 var ausv = aus08 * 0.01;
 var ausv2 = aus08 - aus;
-var ausv3 = ausv2 / ausv * (-1);
+var ausv3 = ausv2 / ausv;
 var afrv = afr08 * 0.01;
 var afrv2 = afr08 - afr;
-var afrv3 = afrv2 / afrv * (-1);
+var afrv3 = afrv2 / afrv;
 function opa1() {
     document.getElementsByClassName(".europe").style.opacity = '0.1';
 }

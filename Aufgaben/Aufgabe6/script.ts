@@ -27,16 +27,16 @@ var namerv2: number = namer08 - namer;
 var namerv3: number = namerv2 / namerv;
 var asiav: number = asia08 * 0.01;
 var asiav2: number = asia08 - asia;
-var asiav3: number = asiav2 / asiav *(-1);
+var asiav3: number = asiav2 / asiav;
 var samerv: number = samer08 * 0.01;
 var samerv2: number = samer08 - samer;
-var samerv3: number = samerv2 / samerv *(-1);
+var samerv3: number = samerv2 / samerv;
 var ausv: number = aus08 * 0.01;
 var ausv2: number = aus08 - aus;
-var ausv3: number = ausv2 / ausv *(-1);
+var ausv3: number = ausv2 / ausv;
 var afrv: number = afr08 * 0.01;
 var afrv2: number = afr08 - afr;
-var afrv3: number = afrv2 / afrv *(-1);
+var afrv3: number = afrv2 / afrv;
 
 function opa1() {
     document.getElementsByClassName(".europe").style.opacity = '0.1';
