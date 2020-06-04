@@ -124,7 +124,7 @@ function eurofunction() {
     console.log("Die Emission von Europa ist : " + eur + "kg");
     console.log("Relativ zur Gesamtemission verursacht Europa damit :  " + eurorel + "%");
     console.log("Im Vergleich zu 2008 die Emission um " + eurov3 + "% verändert ");
-    console.log("Im Vergleich zu 2008 sind das" + eurov2 *(-1) + "kg C02");
+    console.log("Im Vergleich zu 2008 sind das" + eurov2 + "kg C02");
     console.log("______________________________________________________");
     document.querySelector("#h1e").innerHTML = "Carbon Dioxide Emissions in Europe";
     document.querySelector("#p1").innerHTML = "Emission absolute of Europe in 2018";
