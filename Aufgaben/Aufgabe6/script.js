@@ -36,7 +36,7 @@ var ausv2 = aus08 - aus;
 var ausv3 = ausv2 / ausv;
 var afrv = afr08 * 0.01;
 var afrv2 = afr08 - afr;
-var afrv3 = afrv2 / afrv;
+var afrv3 = ((afrv2 / afrv) * (-1));
 function opa1() {
     document.getElementsByClassName(".europe").style.opacity = '0.1';
 }
