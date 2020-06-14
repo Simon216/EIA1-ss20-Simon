@@ -23,9 +23,9 @@ window.addEventListener("load", function () {
     document.querySelector("#b9").addEventListener("click", function () { playSample(8); });
     function drumpadbeat() {
         setInterval(function () {
-            playSample(2);
-            playSample(5);
-            playSample(7);
+            playSample(1);
+            playSample(4);
+            playSample(3);
         }, 500);
     }
     document.querySelector("img").addEventListener('click', drumpadbeat);

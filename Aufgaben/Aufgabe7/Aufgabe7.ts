@@ -29,9 +29,9 @@ window.addEventListener("load", function() {
 
 function drumpadbeat() {
     setInterval(function() {
-        playSample(2); 
-        playSample(5); 
-        playSample(7)
+        playSample(1); 
+        playSample(4); 
+        playSample(3)
     }, 500);
 }
 
