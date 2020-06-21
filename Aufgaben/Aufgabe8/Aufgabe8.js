@@ -62,93 +62,78 @@ window.addEventListener("load", function () {
     deletebutton.addEventListener('click', function () {
         Sound = [1, 3, 7];
     });
-    /*
-       // var Button: string[] = ['#play', '#micro', '#trash'];
+    /;
+    // var Button: string[] = ['#play', '#micro', '#trash'];
     // document.querySelector(Button[1]).addEventListener('click', mic)
-    playbutton.addEventListener('click', function{}{
-    
-        if (playbutton.getAttribute()) {
-            
-        }
-    
-        if (playbutton.onplay) {
-            playbutton.onpause;
-        } else {
-            playbutton.onplay;
-        }
-    })
-    })
-    
-    document.querySelector("#stop").addEventListener('click', Beat);
-    
-    function Beat() {
-        setInterval(function() {
-            playSample(4); playSample(5); playSample(8)
-           }, 450);
-    
-        function imgchange () {
-            ("#stop").attr("class", "fas fa-play");
-        }
-        
+    playbutton.addEventListener('click', function () { }, {
+        "if": function (playbutton) { },
+        : .getAttribute()
+    });
+    {
     }
-    
-    
-    //Buttons//
-        var Buttons: string [] = ['#play', '#stop', '#micro', 'trash'];
-    
-    
-        var newAudio:
-    
-    
-    /*
-    document.querySelector("img").addEventListener('click', Beat);
-    
-    function Beat() {
-    
-        setInterval(function() {
-            playSample(4); playSample(5); playSample(8)
-           }, 450);
+    if (playbutton.onplay) {
+        playbutton.onpause;
     }
-    
-    
-    var playbutton:HTMLElement = document.querySelector('img');
-    
-    playbutton.addEventListener('click', function{}{
-    
-        if (playbutton.onplay) {
-            playbutton.onpause;
-        } else {
-            playbutton.onplay;
-        }
-    })
-    
-    
-    
-    playbutton.addEventListener('click', Beat {
-        if (playbutton.) {
-            
-        }
-    })
-    
-    /*
-    function Beat() {
-    
-        playbutton.getAttribute('class', 'active');
-    
-        setInterval(function() {
-            playSample(4); playSample(5); playSample(8)
-           }, 450);
+    else {
+        playbutton.onplay;
     }
-    
-    
-    document.querySelector("img").addEventListener('click', Beat);
-    
-    var stop:HTMLElement = document.querySelector('img');
-    
-    if (stop.getAttribute('class') == 'active') {
-        stop.setAttribute('class', '')
-    } else {
-        stop.setAttribute('class', 'active')
-    }
-    */
 });
+document.querySelector("#stop").addEventListener('click', Beat);
+function Beat() {
+    setInterval(function () {
+        playSample(4);
+        playSample(5);
+        playSample(8);
+    }, 450);
+    function imgchange() {
+        ("#stop").attr("class", "fas fa-play");
+    }
+}
+//Buttons//
+var Buttons = ['#play', '#stop', '#micro', 'trash'];
+var newAudio;
+/;
+document.querySelector("img").addEventListener('click', Beat);
+function Beat() {
+    setInterval(function () {
+        playSample(4);
+        playSample(5);
+        playSample(8);
+    }, 450);
+}
+var playbutton = document.querySelector('img');
+playbutton.addEventListener('click', function () { }, {
+    "if": function (playbutton) { },
+    : .onplay
+});
+{
+    playbutton.onpause;
+}
+{
+    playbutton.onplay;
+}
+playbutton.addEventListener('click', Beat, {
+    "if": function (playbutton) { },
+    : .
+});
+{
+}
+/;
+function Beat() {
+    playbutton.getAttribute('class', 'active');
+    setInterval(function () {
+        playSample(4);
+        playSample(5);
+        playSample(8);
+    }, 450);
+}
+document.querySelector("img").addEventListener('click', Beat);
+var stop = document.querySelector('img');
+if (stop.getAttribute('class') == 'active') {
+    stop.setAttribute('class', '');
+}
+else {
+    stop.setAttribute('class', 'active');
+}
+    * /;
+;
