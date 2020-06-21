@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    
+
 var sounds: HTMLAudioElement [] = [];
         sounds.push (new Audio ("A.mp3"));
         sounds.push (new Audio ("C.mp3"));
@@ -32,7 +32,7 @@ window.addEventListener("load", function() {
 
 
     var play;
-    var Sound = [2, 5, 6];
+    var Sound = [1, 5, 6];
     var i = 0;
     var playbutton = document.querySelector('#play');
     playbutton.addEventListener('click', function () {
