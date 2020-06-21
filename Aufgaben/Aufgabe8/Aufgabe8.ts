@@ -68,7 +68,7 @@ window.addEventListener("load", function() {
     deletebutton.addEventListener('click', function () {
         Sound = [1, 3, 7];
     });
-    /
+    /*
        // var Button: string[] = ['#play', '#micro', '#trash'];
     // document.querySelector(Button[1]).addEventListener('click', mic)
     playbutton.addEventListener('click', function{}{
@@ -106,7 +106,7 @@ window.addEventListener("load", function() {
         var newAudio:
     
     
-    /
+    /*
     document.querySelector("img").addEventListener('click', Beat);
     
     function Beat() {
@@ -136,7 +136,7 @@ window.addEventListener("load", function() {
         }
     })
     
-    /
+    /*
     function Beat() {
     
         playbutton.getAttribute('class', 'active');
