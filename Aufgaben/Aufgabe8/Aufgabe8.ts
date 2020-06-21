@@ -1,4 +1,5 @@
-
+window.addEventListener('load', function () {
+    
 var sounds: HTMLAudioElement [] = [];
         sounds.push (new Audio ("A.mp3"));
         sounds.push (new Audio ("C.mp3"));
