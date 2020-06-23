@@ -30,20 +30,22 @@ window.addEventListener("load", function() {
     document.querySelector("#b9").addEventListener("click", function() { playSample(8); });
 
 
-    var play;
-    var Sound = [1, 5, 6];
-    var i = 0;
-    var playbutton = document.querySelector('#play');
+    var play: number;
+    var Sound: number[] = [4, 5, 8];
+    var i: number = 0;
+    var playbutton: HTMLElement = document.querySelector('#play');
+
     playbutton.addEventListener('click', function () {
+
         if (playbutton.getAttribute('class') == 'fas fa-play') {
             playbutton.setAttribute('class', 'fas fa-stop');
             Beat();
-        }
-        else {
+        } else {
             playbutton.setAttribute('class', 'fas fa-play');
             clearInterval(play);
         }
-    });
+    })
+
     function Beat() {
         play = setInterval(function () {
             playSample(Sound[i]);
@@ -52,22 +54,28 @@ window.addEventListener("load", function() {
                 i = 0;
             }
         }, 450);
+
     }
-    var micro = document.querySelector('#micro');
-    micro.addEventListener('click', mic);
+
+    var micro: HTMLElement = document.querySelector('#micro')
+    micro.addEventListener('click', mic)
+
     function mic() {
         if (record == false) {
-            record = true;
+            record = true
+        } else {
+            record = false
         }
-        else {
-            record = false;
-        }
-    }
-    var record = false;
-    var deletebutton = document.querySelector('#trash');
+    } 
+
+    var record: boolean = false
+
+    var deletebutton: HTMLElement = document.querySelector('#trash');
+
     deletebutton.addEventListener('click', function () {
-        Sound = [1, 3, 7];
-    });
+        Sound = [4, 5, 8]
+    })
+    
     /*
        // var Button: string[] = ['#play', '#micro', '#trash'];
     // document.querySelector(Button[1]).addEventListener('click', mic)
@@ -157,5 +165,5 @@ window.addEventListener("load", function() {
         stop.setAttribute('class', 'active')
     }
     */
-});
-   
+
+})
