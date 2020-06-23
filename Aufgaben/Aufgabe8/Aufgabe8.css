@@ -120,20 +120,6 @@ body{
     cursor: pointer;
     border-radius: 8px;
 }
-
-i {
-    color: white;
-    font-size: 80px;
-    padding-left: 30px;
-    margin-left: 0px;
-    margin-top: 15px;
-    opacity: 50%;
-}
-
-i:hover {
-    opacity: 100%;
-}
-
 #play {
-    padding-left: 340px;
+    cursor: pointer;
 }
