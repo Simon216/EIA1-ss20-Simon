@@ -1,14 +1,14 @@
 window.addEventListener('load', function () {
     var sounds = [];
-    sounds.push(new Audio('Sound/A.mp3'));
-    sounds.push(new Audio('Sound/C.mp3'));
-    sounds.push(new Audio('Sound/F.mp3'));
-    sounds.push(new Audio('Sound/G.mp3'));
-    sounds.push(new Audio('Sound/hihat.mp3'));
-    sounds.push(new Audio('Sound/kick.mp3'));
-    sounds.push(new Audio('Sound/laugh-1.mp3'));
-    sounds.push(new Audio('Sound/laugh-2.mp3'));
-    sounds.push(new Audio('Sound/snare.mp3'));
+    sounds.push(new Audio('A.mp3'));
+    sounds.push(new Audio('C.mp3'));
+    sounds.push(new Audio('F.mp3'));
+    sounds.push(new Audio('G.mp3'));
+    sounds.push(new Audio('hihat.mp3'));
+    sounds.push(new Audio('kick.mp3'));
+    sounds.push(new Audio('laugh-1.mp3'));
+    sounds.push(new Audio('laugh-2.mp3'));
+    sounds.push(new Audio('snare.mp3'));
     function playSample(samplenumber) {
         sounds[samplenumber].play();
         if (record == true) {
