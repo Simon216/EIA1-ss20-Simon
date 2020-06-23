@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
     document.querySelector("#b8").addEventListener("click", function () { playSample(7); });
     document.querySelector("#b9").addEventListener("click", function () { playSample(8); });
     var play;
-    var Sound = [1, 5, 6];
+    var Sound = [4, 5, 8];
     var i = 0;
     var playbutton = document.querySelector('#play');
     playbutton.addEventListener('click', function () {
@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
     var record = false;
     var deletebutton = document.querySelector('#trash');
     deletebutton.addEventListener('click', function () {
-        Sound = [1, 3, 7];
+        Sound = [4, 5, 8];
     });
     /*
        // var Button: string[] = ['#play', '#micro', '#trash'];
