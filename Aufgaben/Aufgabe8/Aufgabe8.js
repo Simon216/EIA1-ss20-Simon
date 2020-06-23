@@ -14,15 +14,16 @@ function playSample(samplenumber) {
         Sound.push(samplenumber);
     }
 }
-document.querySelector("#Sound-A").addEventListener('click', function () { playSample(0); });
-document.querySelector("#Sound-C").addEventListener('click', function () { playSample(1); });
-document.querySelector("#Sound-F").addEventListener('click', function () { playSample(2); });
-document.querySelector("#Sound-G").addEventListener('click', function () { playSample(3); });
-document.querySelector("#Sound-hihat").addEventListener('click', function () { playSample(4); });
-document.querySelector("#Sound-kick").addEventListener('click', function () { playSample(5); });
-document.querySelector("#Sound-laugh1").addEventListener('click', function () { playSample(6); });
-document.querySelector("#Sound-laugh2").addEventListener('click', function () { playSample(7); });
-document.querySelector("#Sound-snare").addEventListener('click', function () { playSample(8); });
+document.querySelector("#b1").addEventListener('click', function () { playSample(0); });
+document.querySelector("#b2").addEventListener('click', function () { playSample(1); });
+document.querySelector("#b3").addEventListener('click', function () { playSample(2); });
+document.querySelector("#b4").addEventListener('click', function () { playSample(3); });
+document.querySelector("#b5").addEventListener('click', function () { playSample(4); });
+document.querySelector("#b6").addEventListener('click', function () { playSample(5); });
+document.querySelector("#b7").addEventListener('click', function () { playSample(6); });
+document.querySelector("#b8").addEventListener('click', function () { playSample(7); });
+document.querySelector("#b9").addEventListener('click', function () { playSample(8); });
+//Aufgabe 7.2 //
 var play;
 var Sound = [4, 5, 8];
 var i = 0;
