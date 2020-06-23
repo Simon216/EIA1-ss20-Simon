@@ -1,183 +1,139 @@
-body {
-    background-color: rgb(34, 34, 34);  
-    display: block;
+body{
+    font-family: Helvetica;
+	font-size: small;
+	background: #000000;
+}
+
+.buttons{
+    display: left;
+    align-items: center;
     position: relative;
-    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 0px;
     text-align: center;
-  }
-    
-  .icons {
-    font-size: 70px;
+}
+
+#b1{
+    background-color: #3c94f6;
+    background-image: linear-gradient(#3d93f6,#2167d4);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b2 {
+    background-color: #3c94f6;
+    background-image: linear-gradient(#3d93f6,#2167d4);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b3 {
+    background-color: #3c94f6;
+    background-image: linear-gradient(#3d93f6,#2167d4);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b4 {
+    background-color: #ff5ab0;
+    background-image: linear-gradient(#ff5ab0,#f00a81);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b5 {
+    background-color: #ff5ab0;
+    background-image: linear-gradient(#ff5ab0,#f00a81);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#b6 {
+    background-color: #ff5ab0;
+    background-image: linear-gradient(#ff5ab0,#f00a81);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b7 {
+    background-color: #ff5ab0;
+    background-image: linear-gradient(#ff5ab0,#f00a81);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#b8 {
+    background-color: #f6a23d;
+    background-image: linear-gradient(#f6a23d, #c96a05);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#b9 {
+    background-color: #f6a23d;
+    background-image: linear-gradient(#f6a23d, #c96a05);
+    border: none;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+i {
     color: white;
-    cursor: pointer;
-  }
-  
-  .fa-play {
-    position: fixed;
-    left: 610px;
-    top: 630px;
-  }
-  .fa-play:hover{
-    opacity: 0.5;
-  }
-  
-  .fa-pause{
-    position: fixed;
-    left: 610px;
-    top: 630px;
-  }
-  .fa-pause:hover{
-    opacity: 0.5;
-  }
-  
-  .fa-circle{
-    position: fixed;
-    left: 450px;
-    top: 630px;  
-  }
-  .fa-circle:hover{
-    opacity: 0.5;
-  }
-  
-  .fa-stop{
-    position: fixed;
-    left: 760px;
-    top: 630px; 
-  }
-  .fa-stop:hover{
-    opacity: 0.5;
-  }
-  
-  .button1{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #db8be8, #d077dd, #c662d1, #bc4cc6, #b133ba);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 400px;
-    right: 0px;
-    top: 10px;
-    cursor: pointer;
-  }
-  .button2{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #db8be8, #d077dd, #c662d1, #bc4cc6, #b133ba);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 555px;
-    right: 0px;
-    top: 10px;
-    cursor: pointer;
-  }
-  .button3{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #db8be8, #d077dd, #c662d1, #bc4cc6, #b133ba);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 710px;
-    right: 0px;
-    top: 10px;
-    cursor: pointer;
-  }
-  .button4{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f884ab, #f672a6, #f45fa2, #f04a9f, #ec2f9d);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 400px;
-    right: 0px;
-    top: 165px;
-    cursor: pointer;
-  }
-  .button5{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f884ab, #f672a6, #f45fa2, #f04a9f, #ec2f9d);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 555px;
-    right: 0px;
-    top: 165px;
-    cursor: pointer;
-  }
-  .button6{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f884ab, #f672a6, #f45fa2, #f04a9f, #ec2f9d);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 710px;
-    right: 0px;
-    top: 165px;
-    cursor: pointer;
-  }
-  .button7{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f884ab, #f672a6, #f45fa2, #f04a9f, #ec2f9d);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 400px;
-    right: 0px;
-    top: 320px;
-    cursor: pointer;
-  }
-  .button8{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f8c384, #f3b76e, #eeab57, #e9a03f, #e39424);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 555px;
-    right: 0px;
-    top: 320px;
-    cursor: pointer;
-  }
-  .button9{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #f8c384, #f3b76e, #eeab57, #e9a03f, #e39424);
-    border-radius: 10px;
-    bottom: 0px;
-    left: 710px;
-    right: 0px;
-    top: 320px;
-    cursor: pointer;
-  }
-  
-  .button1:hover{
-    opacity: 0.7
-  }
-  .button2:hover{
-    opacity: 0.7
-  }
-  .button3:hover{
-    opacity: 0.7
-  }
-  .button4:hover{
-    opacity: 0.7
-  }
-  .button5:hover{
-    opacity: 0.7
-  }
-  .button6:hover{
-    opacity: 0.7
-  }
-  .button8:hover{
-    opacity: 0.7
-  }
-  .button9:hover{
-    opacity: 0.7
-  }
+    font-size: 80px;
+    padding-left: 30px;
+    margin-left: 0px;
+    margin-top: 15px;
+    opacity: 50%;
+}
+
+i:hover {
+    opacity: 100%;
+}
+
+#play {
+    padding-left: 340px;
+}
