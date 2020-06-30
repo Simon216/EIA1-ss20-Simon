@@ -8,11 +8,11 @@ var CHECK = "fa-check-circle";
 var UNCHECK = "fa-circle-thin";
 var LINE_THROUGH = "lineThrough";
 //Variables
-var LIST = ["wef"]; //ist immer 0...
+var LIST = ["wef"];
 var id = 0;
-//document.querySelector("#Zähler").innerHTML= (LIST.length + " in total");//wird angezeigt, ist aber immer 0 XXXXXXXXXX 
-//console.log(LIST.length); //geht nicht
-//Show todays date
+//document.querySelector("#Zähler").innerHTML= (LIST.length + " in total");
+//console.log(LIST.length); 
+//Datum
 var options = { weekday: "long", month: "short", day: "numeric" };
 var today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
@@ -27,7 +27,7 @@ function addToDo(toDo, id, done, trash) {
     var position = "beforeend";
     list.insertAdjacentHTML(position, item);
 }
-//add an item to the list when the enter key is pressed
+//add an item to the list 
 document.addEventListener("keyup", function (even) {
     if (event.keyCode == 13) { //= enter taste
         var toDo = input.value;
@@ -40,15 +40,15 @@ document.addEventListener("keyup", function (even) {
                 done: false,
                 trash: false
             });
-            //document.getElementById("#Zähler") = (LIST.length +1); //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            //document.getElementById("#Zähler") = (LIST.length +1); 
             //LIST.length = +1; //geht nicht
             id++;
-            document.querySelector("#Zähler").innerHTML = (id + " in total"); //GEHT XXXXXXXXXX 
+            document.querySelector("#Zähler").innerHTML = (id + " in total");
         }
         input.value = ""; //input feld wieder leer machen danach
     }
 });
-// Complete to do (wenn man auf den complete button drückt)
+// Complete to do 
 function completeToDo(element) {
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
@@ -56,18 +56,18 @@ function completeToDo(element) {
     //set done to true if it was false and fals if it was true:
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
-//remove to do function (wenn man auf trash button klickt)
+//remove to do function 
 function removeToDo(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
     LIST[element.id].trash = true;
-    //document.getElementById("#Zähler") = (LIST.length -1); //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    //LIST.length = -1; //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //document.getElementById("#Zähler") = (LIST.length -1); 
+    //LIST.length = -1; 
     id--;
     document.querySelector("#Zähler").innerHTML = (id + " in total");
 }
 //target the items created dynamically
 list.addEventListener("click", function (event) {
-    var element = event.target; //return the clicked element inside list
+    var element = event.target; //return 
     var elementJob = element.attributes.job.value; //complete or delete
     if (elementJob == "complete") {
         completeToDo(element);
@@ -78,10 +78,10 @@ list.addEventListener("click", function (event) {
 });
 /*
 var TaskList: string [] = [];
-//Aus dem Array eine ungeordnete Liste machen:
+
 var list = document.createElement('ul');
-// eine Liste für jedes pups machen
-// und hinten an liste anhängen
+
+
 TaskList.forEach(function (pups) {
     var li = document.createElement('li');
     li.textContent = pups;
@@ -89,37 +89,37 @@ TaskList.forEach(function (pups) {
 });
 var app = document.querySelector('#pupu');
 app.appendChild(list);
-//AUFGABE: Array soll als Liste auf der Webseite zu sehen sein --> ja
+
 document.querySelector("button").addEventListener("click", myFunctionListe);
 function myFunctionListe(){
-    //alert("test"); //--> funktioniert !!
+    //alert("test");
     let task = document.getElementById("input").value;
-    //alert(task); // --> funktioniert auch omg
-    //jetzt hinten ans array dran:
+    //alert(task);
+    
     TaskList.push(task);
-    //alert("huhu: "+TaskList);//funktioniert
-        //JETZT: als Liste anzeigen statt komma aufzählung XXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //alert("huhu: "+TaskList);
+        
     document.getElementById("ausgabe").innerHTML = TaskList;
-    //document.getElementById("ausgabe").innerHTML = TaskList[0]; // undefined
-    //document.getElementById("ausgabe").innerHTML = TaskList[1]; // undefined
-    //document.getElementById("ausgabe").innerHTML = TaskList[2]; //wird angezeigt
+    //document.getElementById("ausgabe").innerHTML = TaskList[0];
+    //document.getElementById("ausgabe").innerHTML = TaskList[1];
+    //document.getElementById("ausgabe").innerHTML = TaskList[2];
     for (let i: number = 0;  i < TaskList;  i++) {
-        document.getElementById("ausgabe").innerHTML = TaskList[i]; //GEHT AUCH NICHT
+        document.getElementById("ausgabe").innerHTML = TaskList[i];
         console.log(TaskList[i]);
     }
-    //AUFGABE: Zahl der ToDos anzeigen (Listenlänge) --> ja
+   
     document.getElementById("dieliste").innerHTML = TaskList.length + " in total"; //--> funktioniert
 }
 }
-//DANN: wenn neues array element hinzugefüht wird kommen trash button und check mark direkt mit.. XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
  
 /*
    for (let i = 0; i < TaskList.length; i++) {
         console.log(TaskList[i]);
      }
-    let i: number = 0;	// Zählervariable auserhalb der Schleife definieren
+    let i: number = 0;
     do {
         console.log(TaskList[i]);
         i++;
-    } while (i < TaskList) // Die Bedingung nach dem Codeblock
+    } while (i < TaskList)
 */ 
