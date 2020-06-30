@@ -33,7 +33,7 @@ document.addEventListener("keyup", function (even) {
         var toDo = input.value;
         //if the input isnt empty:
         if (toDo) {
-            addToDo(toDo, id, false, false); //funktion toDo starten
+            addToDo(toDo, id, false, false);
             LIST.push({
                 name: toDo,
                 id: id,
@@ -41,11 +41,11 @@ document.addEventListener("keyup", function (even) {
                 trash: false
             });
             //document.getElementById("#Zähler") = (LIST.length +1); 
-            //LIST.length = +1; //geht nicht
+            //LIST.length = +1; 
             id++;
             document.querySelector("#Zähler").innerHTML = (id + " in total");
         }
-        input.value = ""; //input feld wieder leer machen danach
+        input.value = "";
     }
 });
 // Complete to do 
@@ -53,7 +53,6 @@ function completeToDo(element) {
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
-    //set done to true if it was false and fals if it was true:
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 //remove to do function 
